@@ -17,7 +17,7 @@ Iwara的页面在移动设备上表现非常糟糕，本插件就是解决这个
 
 How to install:<br>
 First you need to google and install Yandex Browser on your Android devices, then visit Chrome Web Store https://chrome.google.com/webstore/category/extensions, search for ***Iwara Mobile Optimizer***, simply add it, just like how you install an extension to your PC chrome. 
-<br>
+<br><br>
 安装方法：<br>
 首先在你的安卓机上百度并下载Yandex浏览器，然后打开Chrome网上应用店https://chrome.google.com/webstore/category/extensions ，搜索 ***Iwara移动端优化*** ， 点击添加，就像在PC端chrome上装插件一样。
 
