@@ -1,0 +1,132 @@
+.block-extra-content { /*广告*/
+	display: none;
+}
+
+#IM-home #wrapper .recent-subscriptions .previews > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#IM-home #wrapper .recent-subscriptions .previews > div .preview {
+	width: 33%;
+	max-width: 285px;
+	min-width: 160px;
+}
+@media screen and (max-width: 570px){
+	#IM-home #wrapper .recent-videos .previews > div .preview.small , #IM-home #wrapper .recent-images .previews > div .preview.small {
+		width: 50%;
+	}	
+	#IM-home #wrapper .recent-videos .previews > div .preview.mid , #IM-home #wrapper .recent-images .previews > div .preview.mid {
+		width: 50%;
+	}	
+	#IM-home #wrapper .recent-videos .previews > div .preview.large , #IM-home #wrapper .recent-images .previews > div .preview.large {
+		width: 100%;
+	}	
+}
+
+#IM-index .views-responsive-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#IM-index .views-responsive-grid .views-column {
+	padding: 0 5px 5px 5px;
+	width: 33%;
+	max-width: 220px;
+	min-width: 160px;
+}
+
+#IM-view #IM-function {
+	display: flex;
+	padding-bottom: 10px;
+	justify-content: space-between;
+}
+#IM-view #IM-function > div {
+	width: 49%;
+}
+#IM-view #IM-function > div .IM-title {
+	font-size: 85%;
+	text-align: center;
+	white-space: nowrap;
+}
+#IM-view #IM-function > div .IM-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -1px;
+}
+#IM-view #IM-function > div .IM-buttons .btn {
+	padding: 10px 0px;
+    margin: 0 1px;
+    flex: 1 1 33%;
+}
+#IM-view #IM-function > div .IM-buttons .btn.IM-current {
+	background-color: #1abc9c;
+}
+#IM-view .views-responsive-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#IM-view .views-responsive-grid .views-column {
+	padding: 0;
+	padding-bottom: 5px;
+	width: 33%;
+	max-width: 160px;
+	min-width: 120px;
+}
+#IM-view #download-options li {
+    display: inline-block;
+    width: 79px;
+    margin-right: 10px;
+}
+#IM-view #download-options li a {
+	width: 100%;
+	padding: 10px 0;
+}
+#IM-view .node-buttons {
+	padding-bottom: 10px;
+}
+#IM-view .node-buttons .btn {
+	margin-bottom: 5px;
+}
+ 
+#IM-view .node-image.node-full .field-name-field-images .slick-slider{
+	height: auto;
+}
+
+#IM-user .view-profile.view-display-id-block .views-field-picture img{
+	max-width: 154px;
+}
+
+#IM-user .col-sm-9{
+	padding: 0;
+}
+#IM-user #block-views-videos-block-2 .views-responsive-grid, #IM-user #block-views-images-block-3 .views-responsive-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#IM-user #block-views-videos-block-2 .views-responsive-grid > div, #IM-user #block-views-images-block-3 .views-responsive-grid > div {
+	padding: 0 5px 5px 5px;
+	width: 33%;
+	max-width: 220px;
+	min-width: 160px;
+}
+#IM-user .view-journals {
+	overflow: hidden; /*没这句页面可能会被撑大*/
+}
+
+/*#IM-search {
+	overflow-x: hidden;
+}*/
+#IM-search #new-search {
+	margin-bottom: 30px;
+}
+#IM-search .views-responsive-grid h1 {
+	border-bottom: none;
+}
+@media screen and (min-width: 768px){
+	#IM-search #new-search {
+		display: none;
+	}
+}

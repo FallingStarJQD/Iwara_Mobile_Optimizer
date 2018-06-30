@@ -1,0 +1,66 @@
+{
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "description": "__MSG_appDesc__",
+   "default_locale": "en",
+   "permissions": [ "*://*.iwara.tv/", "tabs", "downloads"],
+   "version": "1.0",
+   "background": {
+      "scripts": ["js/background.js"],
+      "persistent": false
+   },
+   "content_scripts": [
+      {
+         "js": [ "js/home.js" ],
+         "matches": [ "*://*.iwara.tv/", "*://*.iwara.tv/?language=*" ],
+         "run_at": "document_end"
+      },
+      {
+         "js": [ "js/jquery.min.js", "js/index.js" ],
+         "matches": [ "*://*.iwara.tv/videos", "*://*.iwara.tv/videos?*", "*://*.iwara.tv/images", "*://*.iwara.tv/images?*" ],
+         "run_at": "document_end"
+      },
+      {
+         "js": [ "js/jquery.min.js", "js/video.js" ],
+         "matches": [ "*://*.iwara.tv/videos/*" ],
+         "exclude_matches": [ "*://*.iwara.tv/videos" ],
+         "run_at": "document_end"
+      },
+      {
+         "js": [ "js/jquery.min.js", "js/image.js" ],
+         "matches": [ "*://*.iwara.tv/images/*", "*://*.iwara.tv/node/*" ],
+         "exclude_matches": [ "*://*.iwara.tv/images", "*://*.iwara.tv/node" ],
+         "run_at": "document_end"
+      },
+      {
+         "js": [ "js/jquery.min.js", "js/user.js" ],
+         "matches": [ "*://*.iwara.tv/user", "*://*.iwara.tv/user?*", "*://*.iwara.tv/users/*", "*://*.iwara.tv/user/*/playlists*" ],
+         "exclude_matches": [ "*://*.iwara.tv/users", "*://*.iwara.tv/users/*/*" ],
+         "run_at": "document_end"
+      },
+      {
+         "js": [ "js/jquery.min.js", "js/index.js" ],
+         "matches": [ "*://*.iwara.tv/users/*/images*", "*://*.iwara.tv/users/*/videos*" ],
+         "run_at": "document_end"
+      },
+      {
+         "js": [ "js/jquery.min.js", "js/index.js" ],
+         "matches": [ "*://*.iwara.tv/subscriptions*", "*://*.iwara.tv/user/liked*" ],
+         "run_at": "document_end"
+      },
+      {
+         "js": [ "js/jquery.min.js", "js/search.js" ],
+         "matches": [ "*://*.iwara.tv/search*" ],
+         "run_at": "document_end"
+      }
+   ],
+   "icons": {
+      "16": "img/icon16.png",
+      "48": "img/icon48.png",
+      "128": "img/icon128.png"
+   },
+   "browser_action": {
+      "default_icon": "img/toolbar.png"
+   },
+   "web_accessible_resources": [ "js/video_injected.js", "js/image_injected.js", "iwara_mobile.css" ]
+}

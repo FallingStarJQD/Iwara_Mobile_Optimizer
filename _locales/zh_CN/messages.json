@@ -1,0 +1,10 @@
+{
+	"appName": {
+		"message": "Iwara移动端优化",
+		"description": "Iwara Mobile Optimizer"
+	},
+	"appDesc": {
+		"message": "Iwara移动端优化 (用于安卓版Yandex浏览器)", 
+		"description":"Iwara Mobile Optimizer (for Yandex in Android)"
+	}
+}
