@@ -6,5 +6,6 @@ $("body").attr("id", "IM-user");
 
 let $views = $('#block-views-videos-block-2 .content .view-content, #block-views-images-block-3 .content .view-content');
 $(".views-row > div", $views).unwrap();
+$(".node a").attr('target', '_blank');
 
 chrome.runtime.sendMessage({turnedOn: true});

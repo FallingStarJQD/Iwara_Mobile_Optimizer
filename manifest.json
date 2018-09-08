@@ -11,25 +11,18 @@
    },
    "content_scripts": [
       {
-         "js": [ "js/home.js" ],
+         "js": [ "js/jquery.min.js", "js/home.js" ],
          "matches": [ "*://*.iwara.tv/", "*://*.iwara.tv/?language=*" ],
          "run_at": "document_end"
       },
       {
-         "js": [ "js/jquery.min.js", "js/index.js" ],
-         "matches": [ "*://*.iwara.tv/videos", "*://*.iwara.tv/videos?*", "*://*.iwara.tv/images", "*://*.iwara.tv/images?*" ],
+         "js": [ "js/jquery.min.js", "js/videos.js" ],
+         "matches": [ "*://*.iwara.tv/videos*" ],
          "run_at": "document_end"
       },
       {
-         "js": [ "js/jquery.min.js", "js/video.js" ],
-         "matches": [ "*://*.iwara.tv/videos/*" ],
-         "exclude_matches": [ "*://*.iwara.tv/videos" ],
-         "run_at": "document_end"
-      },
-      {
-         "js": [ "js/jquery.min.js", "js/image.js" ],
-         "matches": [ "*://*.iwara.tv/images/*", "*://*.iwara.tv/node/*" ],
-         "exclude_matches": [ "*://*.iwara.tv/images", "*://*.iwara.tv/node" ],
+         "js": [ "js/jquery.min.js", "js/images.js" ],
+         "matches": [ "*://*.iwara.tv/images*" ],
          "run_at": "document_end"
       },
       {
@@ -52,6 +45,11 @@
          "js": [ "js/jquery.min.js", "js/search.js" ],
          "matches": [ "*://*.iwara.tv/search*" ],
          "run_at": "document_end"
+      },
+      {
+         "matches": [ "*://*.iwara.tv/forums*" ],
+         "css": [ "iwara_mobile.css" ],
+         "run_at": "document_start"
       }
    ],
    "icons": {
