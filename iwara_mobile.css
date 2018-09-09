@@ -130,3 +130,7 @@
 		display: none;
 	}
 }
+
+.forum-post .text-muted{
+	color: #16a085;
+}
