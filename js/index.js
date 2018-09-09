@@ -5,6 +5,5 @@ head.appendChild($myCss[0]);
 $("body").attr("id", "IM-index");
 
 $("#block-system-main .view-content .views-row .views-column").unwrap();
-$(".views-column a").attr('target', '_blank');
 
 chrome.runtime.sendMessage({turnedOn: true});

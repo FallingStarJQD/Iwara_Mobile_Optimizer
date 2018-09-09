@@ -1,8 +1,10 @@
 let head = document.head || document.documentElement;
-let $myCss = $(`<link id="myCss" type="text/css" rel="stylesheet" href="${chrome.runtime.getURL('iwara_mobile.css')}"></link>`);
-head.appendChild($myCss[0]);
+let myCss = document.createElement('link');
+myCss.type = "text/css";
+myCss.rel = "stylesheet";
+myCss.href = chrome.runtime.getURL('iwara_mobile.css');
+head.appendChild(myCss);
 
-$('body').attr('id', 'IM-home')
-$(".preview a").attr('target', '_blank');
+document.body.id = "IM-home";
 
 chrome.runtime.sendMessage({turnedOn: true});
