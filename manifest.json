@@ -1,13 +1,13 @@
 {
-   "manifest_version": 2,
+   "manifest_version": 2.1,
    "name": "__MSG_appName__",
    "description": "__MSG_appDesc__",
    "default_locale": "en",
-   "permissions": [ "*://*.iwara.tv/", "tabs", "downloads"],
+   "permissions": [ "*://*.iwara.tv/", "tabs", "downloads", "webRequest", "webRequestBlocking", "*://ajax.googleapis.com/", "*://www.google-analytics.com/"],
    "version": "1.1",
    "background": {
       "scripts": ["js/background.js"],
-      "persistent": false
+      "persistent": true
    },
    "content_scripts": [
       {
